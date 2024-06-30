@@ -1,0 +1,69 @@
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #424242;
+    position: fixed;
+    list-style: none;
+}
+
+header nav h1{
+    font-size: 35px;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    font-weight: 550;
+}
+
+header nav h1 span{
+    color: #ff0004;
+    font-style: italic;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li a{
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+header nav ul li a:hover{
+    color: #ff0004;
+}
+
+header nav ul li a::after{
+    content: "";
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff0004;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+
+header nav ul li a:hover::after{
+    transform: scaleX(0.5);
+}
+
+header .icon i{
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-weight: 500;
+}
+
+header .icon i:hover{
+    color: #ff0004;
+}
+
